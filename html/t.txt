@@ -1,0 +1,3 @@
+ga:correlationScore
+ga:queryProductQuantity
+ga:relatedProductQuantity
