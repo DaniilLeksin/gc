@@ -12,6 +12,7 @@ import wx
 import wx.html
 from ui_browser import Browser
 from ui_properties import Properties
+from c_wrapper import *
 
 ###########################################################################
 ## Class main
@@ -51,7 +52,7 @@ class Main(wx.Frame):
 
         sz_buttons = wx.BoxSizer(wx.HORIZONTAL)
 
-        self.bt_getData = wx.Button(self, wx.ID_ANY, u"Get data", wx.DefaultPosition, wx.DefaultSize, 0)
+        self.bt_getData = wx.Button(self, wx.ID_ANY, u"Make report", wx.DefaultPosition, wx.DefaultSize, 0)
         sz_buttons.Add(self.bt_getData, 1, wx.ALL, 5)
 
         self.bt_clearSelection = wx.Button(self, wx.ID_ANY, u"Clear selections", wx.DefaultPosition, wx.DefaultSize, 0)
@@ -99,7 +100,9 @@ class Main(wx.Frame):
 
     # Virtual event handlers, override them in your derived class
     def on_bt_get_data(self, event):
-        event.Skip()
+        # Check the correctness of info
+        print self.p_properties.dict_api_properties
+        #check_the_data(self.hw_info)
 
     def on_bt_clear_selection(self, event):
         event.Skip()

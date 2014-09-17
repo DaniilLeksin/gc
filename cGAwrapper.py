@@ -28,12 +28,11 @@ def main(argv):
         start_date = properties['start-date']
         end_date = properties['end-date']
         dimensions = properties['dimensions']
-
         filters = properties['filters']
 
         # Make instance of the google api class
         api = GoogleAnalyticApi(client_id, client_secret)
-
+        # Go go go
         res = api.callAPI(start_date, end_date, dimensions=dimensions, filters=filters)
         pprint.pprint(res)
 

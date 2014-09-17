@@ -10,7 +10,24 @@ __author__ = 'Daniil Leksin'
 global user_metrics
 global session_metrics
 
-#
+dict_credentials = {
+    "installed": {
+        "client_id": None,
+        "client_secret": None,
+        "start-date": None,
+        "end-date": None,
+        "dimensions": None,
+        "filters": None,
+        "sort": None,
+        "segment": None,
+        "sampling_level": None,
+        "start_index": None,
+        "max_results": None,
+        "output": None,
+        "fields": None
+    }
+}
+
 user_metrics = {
     "ga:userType": {
         "type": "bool",

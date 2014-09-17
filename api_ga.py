@@ -69,9 +69,9 @@ class GoogleAnalyticApi(object):
             return None
 
         params = {
-            "ids": 'ga:' + self.profile_id,                 # айдишники профилей
-            "start_date": date_from,   # дата начала
-            "end_date": date_to,       # дата конца
+            "ids": 'ga:' + self.profile_id,
+            "start_date": date_from,
+            "end_date": date_to,
             "metrics": metrics,
         }
 
