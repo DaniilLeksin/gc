@@ -1,0 +1,14 @@
+../c_gawrapper/c_api.py - the function working with google api.
+
+To start console GA:wrapper u need:
+start in console/terminal: cGAwrapper.py credentials.json properties.json
+where: credentials.json - fill the required fields aka client_id, secret_id
+in properties.json - set up the properties.
+
+To start the UI GA:wrapper u need:
+start in console/terminal: xGAwrapper.py
+
+ps: for UI version wx library for python27 is required.
+
+TODO: see in code
+TODO: open functionality
